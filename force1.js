@@ -3,7 +3,7 @@ var w = 1400,
     h = 900,
     fill = d3.scale.category20();
 
-var vis = d3.select("#chart")
+var vis = d3.select("#chart1")
   .append("svg:svg")
     .attr("width", w)
     .attr("height", h);
