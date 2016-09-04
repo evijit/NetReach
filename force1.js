@@ -33,8 +33,8 @@ d3.json("force.json", function(json) {
       .attr("class", "node")
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
-      // .attr("r", function(d) { return d.reach; })
-      .attr("r", function(d) { return Math.log(d.reach*1000); })
+      .attr("r", function(d) { return d.reach; })
+      // .attr("r", function(d) { return Math.log(d.reach*1000); })
       .style("fill", function(d) { return fill(d.group); })
       .call(force.drag);
 
